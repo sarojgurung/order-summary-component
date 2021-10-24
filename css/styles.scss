@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+$base-white: #fff;
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturate-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+$border-radius: 1rem;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    background: url(../images/pattern-background-desktop.svg) $pale-blue no-repeat;
+    background-size: contain;
+    height: 100vh;
+    color: $desaturate-blue;
+}
+
+img{
+    width: 100%;
+}
+
+.container-outer{
+    padding: 7rem 0;
+}
+
+.container-main{
+    background: $base-white;
+    border-radius: $border-radius;
+    width: 400px;
+    margin: auto;
+}
+
+.container-inner{
+    padding: 0 2.5rem 2.5rem;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    margin-bottom: $border-radius;
+    justify-content: space-between;
+}
+
+.col{
+    width: 100%;
+}
+
+.hero-image{
+    border-radius: $border-radius $border-radius 0 0 ;
+}
+
+.order-content{
+    background-color: $very-pale-blue;
+    border-radius: $border-radius - 0.5;
+    padding: $border-radius;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-primary{
+    color: $bright-blue;
+}
+
+.text-dark{
+    color: $dark-blue;
+}
+
+.text-bold{
+    font-weight: 700;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    line-height: 1rem;
+    justify-content: center;
+}
+
+.button{
+    width: 100%;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: $border-radius - 0.5;
+    text-decoration: none;
+}
+
+.button-primary{
+    background-color: $bright-blue;
+    box-shadow: 0 .5rem .75rem rgba($color: $bright-blue, $alpha: .4);
+    color: $very-pale-blue;
+}
+
+.button-secondary{
+    background-color: $pale-blue;
+    color: $dark-blue;
+    z-index: 1;
+}
