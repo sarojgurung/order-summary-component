@@ -54,6 +54,11 @@ img {
   padding: 1rem;
 }
 
+.order-button:hover {
+  color: #1f2f56;
+  text-decoration: none;
+}
+
 .text-center {
   text-align: center;
 }
@@ -89,12 +94,21 @@ img {
   background-color: #3829e0;
   box-shadow: 0 0.5rem 0.75rem rgba(56, 41, 224, 0.4);
   color: #f5f7ff;
+  transition: all 0.2s;
+}
+
+.button-primary:hover {
+  background-color: rgba(56, 41, 224, 0.7);
 }
 
 .button-secondary {
   background-color: #e0e8ff;
   color: #1f2f56;
   z-index: 1;
+}
+
+.button-secondary:hover {
+  background-color: rgba(114, 128, 167, 0.3);
 }
 
 /*# sourceMappingURL=styles.css.map */
