@@ -63,6 +63,11 @@ img{
     padding: $border-radius;
 }
 
+.order-button:hover{
+    color: $dark-blue;
+    text-decoration: none;
+}
+
 .text-center{
     text-align: center;
 }
@@ -98,10 +103,19 @@ img{
     background-color: $bright-blue;
     box-shadow: 0 .5rem .75rem rgba($color: $bright-blue, $alpha: .4);
     color: $very-pale-blue;
+    transition: all 0.2s;
+}
+
+.button-primary:hover{
+    background-color: rgba($color: $bright-blue, $alpha: .7);
 }
 
 .button-secondary{
     background-color: $pale-blue;
     color: $dark-blue;
     z-index: 1;
+}
+
+.button-secondary:hover{
+    background-color: rgba($color: $desaturate-blue, $alpha: .3);
 }
